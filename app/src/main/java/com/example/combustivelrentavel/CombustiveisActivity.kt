@@ -21,7 +21,7 @@ class CombustiveisActivity : AppCompatActivity() {
             insets
         }
 
-        lvcombustiveis = findViewById(R.id.lvCombustiveis)
+        lvcombustiveis = findViewById(R.id.lvcombustiveis)
 
         lvcombustiveis.setOnClickListener {
             parent, view, position, id ->

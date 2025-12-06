@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/etConsumoCombustivel1"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:ems="10"
@@ -75,35 +75,35 @@
         app:layout_constraintTop_toTopOf="@+id/tvCombustivel1" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/etConsumoCombustivel2"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/tvCombustivel2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="@+id/etConsumoCombustivel1"
         app:layout_constraintStart_toEndOf="@+id/tvCombustivel2"
         app:layout_constraintTop_toTopOf="@+id/tvCombustivel2" />
 
     <EditText
-        android:id="@+id/editTextNumber3"
+        android:id="@+id/etPrecoComb1"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/tvPreco1"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintEnd_toEndOf="@+id/etConsumoCombustivel2"
         app:layout_constraintStart_toEndOf="@+id/tvCombustivel2"
         app:layout_constraintTop_toTopOf="@+id/tvPreco1" />
 
     <EditText
-        android:id="@+id/editTextNumber4"
+        android:id="@+id/etPrecoComb2"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/tvPreco2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber3"
+        app:layout_constraintEnd_toEndOf="@+id/etPrecoComb1"
         app:layout_constraintStart_toEndOf="@+id/tvPreco2"
         app:layout_constraintTop_toTopOf="@+id/tvPreco2" />
 
@@ -126,10 +126,10 @@
         android:layout_marginEnd="10dp"
         android:text="Buscar"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toBottomOf="@+id/etConsumoCombustivel1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber" />
+        app:layout_constraintStart_toEndOf="@+id/etConsumoCombustivel1"
+        app:layout_constraintTop_toTopOf="@+id/etConsumoCombustivel1" />
 
     <Button
         android:id="@+id/btSearch2"
@@ -138,21 +138,35 @@
         android:layout_marginEnd="10dp"
         android:text="Buscar"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintBottom_toBottomOf="@+id/etConsumoCombustivel2"
         app:layout_constraintEnd_toEndOf="@+id/btSearch"
         app:layout_constraintStart_toStartOf="@+id/btSearch"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber2" />
+        app:layout_constraintTop_toTopOf="@+id/etConsumoCombustivel2" />
+
+    <TextView
+        android:id="@+id/tvResut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:text="O combustivel mais barato é:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCalculate"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/etResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btCalculate"
-        app:layout_constraintVertical_bias="0.10" />
+        app:layout_constraintTop_toBottomOf="@+id/tvResut"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
