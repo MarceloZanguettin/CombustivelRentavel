@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CombustivelRentavel</string>
+    <string name="Welcome">Bem Vindo!</string>
+    <string name="log_in">Entrar</string>
 </resources>
