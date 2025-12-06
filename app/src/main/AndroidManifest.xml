@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CombustivelRentavel">
         <activity
+            android:name=".CombustiveisActivity"
+            android:exported="false" />
+        <activity
             android:name=".RentavelActivity"
             android:exported="false" />
         <activity
