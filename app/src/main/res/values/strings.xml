@@ -1,5 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CombustivelRentavel</string>
     <string name="Welcome">Bem Vindo!</string>
     <string name="log_in">Entrar</string>
+
+    <string-array name="combustiveis">
+        <item>Gasolina</item>
+        <item>Etanol</item>
+    </string-array>
 </resources>
